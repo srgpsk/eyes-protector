@@ -1,0 +1,57 @@
+:root,
+body {
+    background-color: rgba(255, 255, 255, .3);
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.system-info {
+    font-size: .5rem;
+}
+
+.timer-container {
+    text-align: center;
+    background-color: #fff;
+    padding: .5em;
+    font-size: 4rem;
+
+}
+
+.buttons-container {
+    margin-top: 2rem;
+}
+
+.buttons-container button {
+    padding: 1rem;
+}
+
+.buttons-container button:first-child {
+    margin-right: 2rem;
+}
+
+
+
+.draggable-area {
+    width: 100px;
+    height: 10px;
+    background-color: blue;
+    color: white;
+    -webkit-app-region: drag;
+}

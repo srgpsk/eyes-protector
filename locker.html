@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Take a break</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="content">
+            <div class="timer-container">
+                Let your eyes rest or they will rest in peace.<br>
+                Time left: <span id="timer">00:00</span>
+            </div>
+            <div class="buttons-container">
+                <button type="button" id="add_more_time" title="Not implemented yet">Give me <span></span></button>
+                <button type="button" id="skip">Skip</button>
+            </div>
+
+            <!-- <div class="draggable-area">
+                Drag the window here
+            </div> -->
+        </section>
+
+        <section class="system-info">
+            Node.js <span id="node-version"></span>,
+            Chromium <span id="chrome-version"></span>,
+            Electron <span id="electron-version"></span>.
+    </div>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./lockerRenderer.js"></script>
+</body>
+
+</html>
